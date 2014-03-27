@@ -19,10 +19,10 @@ $.ajax({
 	    var className,description,limitDescription;
 	    $.each( data.data, function( key, value ) {
 		//create html element for each data and insert it on body part
-		className = (i % 3 == 0)?'span3 col-sm-6 col-md-3 reset-margin':'span3 col-sm-6 col-md-3';
+		className = (i % 4 == 0)?'span3 col-sm-6 col-md-3 reset-margin':'span3 col-sm-6 col-md-3';
 		i++;
 		description = (value.caption)?value.caption.text:'';
-		limitDescription = description.substr(0,35)+'...';
+		limitDescription = description.substr(0,25)+'...';
 		if(value.type == 'image'){
 
 		    $('.load-content').append('<div class="'+className+'"><div class="thumbnail"><a id="'+value.id+'"href="'+value.images.standard_resolution.url+'" data-lightbox="example-set" title="'+description+'"><img class="example-image" src="'+value.images.low_resolution.url+'" alt="images"/></a></div><div class="caption"><h4>'+value.user.full_name+'</h4><p>'+limitDescription+'</p><p><a class="btn" href="#" onclick="showDetail(\''+value.id+'\')">View details &raquo;</a></p></div></div>');
