@@ -1,0 +1,22 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+/* Custom container */
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.container > hr {
+    margin: 20px 0;
+}
+
+.reset-margin{
+    margin-left: 0px !important;
+    clear: both;
+}
+.span3.col-sm-6{
+    width: 313px;
+    padding-bottom: 20px;
+}
