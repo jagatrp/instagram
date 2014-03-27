@@ -1,9 +1,9 @@
-body {
+/*body {
     padding-top: 20px;
     padding-bottom: 60px;
 }
 
-/* Custom container */
+
 .container {
     margin: 0 auto;
     max-width: 1000px;
@@ -19,4 +19,7 @@ body {
 .span3.col-sm-6{
     width: 313px;
     padding-bottom: 20px;
-}
+}*/
+body { background: #cccccc;}
+.span3 {width: 317px;}
+.thumbnail { line-height: 0px;}

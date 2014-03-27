@@ -28,7 +28,7 @@ $.ajax({
 		    $('.load-content').append('<div class="'+className+'"><div class="thumbnail"><a id="'+value.id+'"href="'+value.images.standard_resolution.url+'" data-lightbox="example-set" title="'+description+'"><img class="example-image" src="'+value.images.low_resolution.url+'" alt="images"/></a></div><div class="caption"><h4>'+value.user.full_name+'</h4><p>'+limitDescription+'</p><p><a class="btn" href="#" onclick="showDetail(\''+value.id+'\')">View details &raquo;</a></p></div></div>');
 		}
 		else if(value.type == 'video'){
-		    $('.load-content').append('<div class="'+className+'"><div class="thumbnail"><video src="'+value.videos.low_resolution.url+'" controls="controls" width="304" height="304"></video></div><div class="caption"><h4>'+value.user.full_name+'</h4><p>'+limitDescription+'</p></div></div>');
+		    $('.load-content').append('<div class="'+className+'"><div class="thumbnail"><video src="'+value.videos.low_resolution.url+'" controls="controls" width="306" height="306"></video></div><div class="caption"><h4>'+value.user.full_name+'</h4><p>'+limitDescription+'</p></div></div>');
 		}
 	    });
 
