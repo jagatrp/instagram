@@ -26,7 +26,7 @@ $.ajax({
 		fullname = (value.user.full_name).toLowerCase();
 		if(value.type == 'image'){
 
-		    $('.load-content').append('<div class="'+className+'"><div class="thumbnail"><a id="'+value.id+'"href="'+value.images.standard_resolution.url+'" data-lightbox="example-set" title="'+description+'"><img class="example-image" src="'+value.images.low_resolution.url+'" alt="images"/></a></div><div class="caption"><h2>'+fullname+'</h2><p>'+limitDescription+'</p><p><a class="btn" href="#" onclick="showDetail(\''+value.id+'\')">View details &raquo;</a></p></div></div>');
+		    $('.load-content').append('<div class="'+className+'"><div class="thumbnail"><a id="'+value.id+'"href="'+value.images.standard_resolution.url+'" data-lightbox="example-set" title="'+description+'"><img class="example-image" src="'+value.images.low_resolution.url+'" alt="images"/></a></div><div class="caption"><h2>'+fullname+'</h2><p>'+limitDescription+'</p><p><a class="btn" href="javascript:void(0);" onclick="showDetail(\''+value.id+'\')">View details &raquo;</a></p></div></div>');
 		}
 		else if(value.type == 'video'){
 		    $('.load-content').append('<div class="'+className+'"><div class="thumbnail"><video src="'+value.videos.low_resolution.url+'" controls="controls" width="221" height="221"></video></div><div class="caption"><h2>'+fullname+'</h2><p>'+limitDescription+'</p></div></div>');
